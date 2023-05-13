@@ -212,6 +212,14 @@ header .toggle.active a::before{
     box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
     border: 1px solid #333;
 }
+.dark-mode header .nav-item  .dropdown-menu::before{
+    content: "";
+    background-color: var(--dark);
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+
+}
 .dark-mode header .nav-item .dropdown-menu .dropdown-item{
     color: var(--border);
 }
