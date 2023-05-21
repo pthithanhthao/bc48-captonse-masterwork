@@ -94,7 +94,7 @@
                               <input type="text" id="search" placeholder="Enter Keyword" class="form-control" required="">
                               <button class="btn btn-bg-pink" type="submit">Search</button>
                              </div>
-                             <button type="button" class="fa fa-times btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                             <button type="button" class="fa fa-times btn-close me-2 m-auto" data-bs-dismiss="modal" aria-label="Close">
                             </button>
                           </form>
                             
@@ -115,21 +115,25 @@
               </nav>
         </div>
     </header>
+
     <!-- banner -->
     <section class="banner">
-       <div class="banner_overlay">
-       <div class="banner_content container d-flex justify-content-between align-items-center py-lg-0 h-100">
-        <div class="banner_left w-50">
-            <h1 class="section_title">We Execute Our Ideas From Start to Finish</h1>
-            <p class="mt-3">Building a beautiful interactive business for <br> startups and innovative companies.</p>
-            <a href="#" class="btn btn-outline-primary btn-outline-pink rounded-1 mt-5">Get started</a>
-        </div>
-        <figure class="banner_right w-50 align-self-end py-lg-0">
-            <img src="./img/main.png" alt="" class="img-fluid">
-        </figure>
-       </div>
-       </div>
+      <div class="banner_bg">
+        <div class="banner_overlay">
+          <div class="banner_content container d-flex justify-content-between align-items-center py-lg-0 h-100">
+           <div class="banner_left w-50 pb-5">
+               <h1 class="section_title">We Execute Our Ideas From Start to Finish</h1>
+               <p class="mt-3">Building a beautiful interactive business for <br> startups and innovative companies.</p>
+               <a href="#" class="btn btn-outline-primary btn-outline-pink mt-5 rounded-1">Get started</a>
+           </div>
+           <figure class="banner_right w-50 align-self-end py-lg-0 mb-0">
+               <img src="./img/main.png" alt="" class="img-fluid">
+           </figure>
+          </div>
+          </div>
+      </div>
     </section>
+
     <!-- choose us -->
     <section class="choose_us text-center m-5">
     <div class="container choose_us_container">
@@ -141,8 +145,10 @@
       </div>
       <div class="choose_us_content my-5">
        <div class="row">
+
+        <!-- choose item 1 -->
         <div class="col">
-          <div class="card py-5 px-2">
+          <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s1.png" class="img-fluid" alt="">
             <div class="card-body">
@@ -153,24 +159,28 @@
            </a>
           </div>
         </div>
+
+         <!-- choose item 1 -->
         <div class="col">
-          <div class="card py-5 px-2">
+          <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s2.png" class="img-fluid" alt="">
             <div class="card-body">
-              <h2 class="card_title"> Interactive
+              <h2 class="card_title"> Business
               </h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
             </div>
            </a>
           </div>
         </div>
+
+         <!-- choose item 1 -->
         <div class="col">
-          <div class="card py-5 px-2">
+          <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s3.png" class="img-fluid" alt="">
             <div class="card-body">
-              <h2 class="card_title"> Interactive
+              <h2 class="card_title"> Inspiration
               </h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
             </div>
@@ -181,6 +191,7 @@
       </div>
     </div>
     </section>
+
     <!-- about us -->
     <section class="about_us">
    <div class="container d-flex gap-5">
@@ -196,45 +207,52 @@
       <a class="btn btn-bg-pink rounded-1 mt-1" href="#">READ MORE</a>
     </div>
     <figure class="about_us_right w-50">
-      <img src="./img/about.jpg" class="img-fluid rounded-1" alt="">
+      <img src="./img/about.jpg" class="img-fluid rounded-1 card-animate" alt="">
     </figure>
    </div>
     </section>
+
     <!-- number -->
     <section class="numbers mt-5">
       <div class="container">
         <div class="row">
+
+          <!-- number item -->
           <div class="col">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
                   Happy Customers
                 </h5>
-                <h1>1045</h1>
+                <h1 class="counter">10458</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
                 </p>
               </div>
             </div>
           </div>
+
+          <!-- number item -->
           <div class="col">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
                   Winning Awards
                 </h5>
-                <h1>890</h1>
+                <h1 class="counter">890</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
                 </p>
               </div>
             </div>
           </div>
+
+          <!-- number item -->
           <div class="col">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
                   Completed Projects
                 </h5>
-                <h1>5345</h1>
+                <h1 class="counter">5345</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
                 </p>
               </div>
@@ -243,6 +261,7 @@
         </div>
       </div>
     </section>
+
     <!-- we are true ... -->
     <section class="intro mt-5">
      <div class="intro_overlay">
@@ -256,6 +275,7 @@
       </div>
      </div>
     </section>
+
     <!-- fqa -->
     <section class="fqas py-5">
       <div class="container">
@@ -267,10 +287,12 @@
       </div>
       <div class="fqa_content mt-5 d-flex gap-5">
         <figure>
-          <img src="./img/women.jpg" class="img-fluid h-100 rounded-1" alt="">
+          <img src="./img/women.jpg" class="img-fluid h-100 rounded-2 card-animate" alt="">
         </figure>
         <div class="fqa_accordion">
           <div class="accordion" id="accordionExample">
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -285,6 +307,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -299,6 +323,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -313,6 +339,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -327,6 +355,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -341,6 +371,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- accordion-item -->
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -360,6 +392,7 @@
       </div>
       </div>
     </section>
+
     <!-- feature -->
     <section class="features py-5">
       <div class="container">
@@ -374,17 +407,26 @@
         <div class="feature_content row my-5 pb-5">
             <div class="col col-10 m-auto">
               <ul class="nav nav-underline justify-content-center py-3 text-center"  id="myTab" role="tablist">
+
+                <!-- project 1 tab -->
                 <li class="nav-item text-center" role="presentation">
                   <a class="nav-link active" id="project-one-tab" data-bs-toggle="tab" data-bs-target="#project-one-tab-pane" role="tab" aria-controls="project-one-tab-pane" aria-selected="true" type="button">Project One</a>
                 </li>
+
+                <!-- project 2 tab -->
                 <li class="nav-item text-center" role="presentation">
                   <a class="nav-link" id="project-two-tab" data-bs-toggle="tab" data-bs-target="#project-two-tab-pane" role="tab" aria-controls="project-two-tab-pane" aria-selected="false" type="button">Project Two</a>
-                  </li>
-                  <li class="nav-item text-center" role="presentation">
+                </li>
+
+                  <!-- project 3 tab -->
+                <li class="nav-item text-center" role="presentation">
                     <a class="nav-link" id="project-three-tab" data-bs-toggle="tab" data-bs-target="#project-three-tab-pane" role="tab" aria-controls="project-three-tab-pane" aria-selected="false" type="button">Project Three</a>
-                    </li>
+                </li>
               </ul>
-              <div class="tab-content my-4" id="myTabContent">
+
+
+              <div class="tab-content my-4" id="myTabContent">             
+                <!-- project 1 content -->
               <div class="tab-pane d-flex gap-4 fade show active" id="project-one-tab-pane" role="tabpanel" aria-labelledby="project-one-tab" tabindex="0">
                 <div class="left_pane w-50">
                   <h1 class="title_pane">Why a visual identity system is more memorable
@@ -393,12 +435,14 @@
                   <a href="#" class="btn btn-outline-primary btn-outline-pink rounded-1">Know More</a>
                 </div>
                 <figure class="right_pane w-50">
-                  <img src="./img/b4.jpg" class="img-fluid rounded-1" alt="">
+                  <img src="./img/b4.jpg" class="img-fluid rounded-2 card-animate" alt="">
                 </figure>
               </div>
+
+               <!-- project 2 content -->
               <div class="tab-pane d-flex gap-4 fade" id="project-two-tab-pane" role="tabpanel" aria-labelledby="project-two-tab" tabindex="0">
                 <figure class="left_pane w-50">
-                  <img src="./img/b5.jpg" class="img-fluid rounded-1" alt="">
+                  <img src="./img/b5.jpg" class="img-fluid rounded-2 card-animate" alt="">
                 </figure>
                 <div class="right_pane w-50">
                   <h1 class="title_pane">Why a visual identity system is more memorable
@@ -408,6 +452,8 @@
                 </div>
                 
               </div>
+
+               <!-- project 3 content -->
               <div class="tab-pane d-flex gap-4 fade" id="project-three-tab-pane" role="tabpanel" aria-labelledby="project-three-tab" tabindex="0">
                 <div class="left_pane w-50">
                   <h1 class="title_pane">Why a visual identity system is more memorable
@@ -416,14 +462,15 @@
                   <a href="#" class="btn btn-outline-primary btn-outline-pink rounded-1">Know More</a>
                 </div>
                 <figure class="right_pane w-50">
-                  <img src="./img/b6.jpg" class="img-fluid rounded-1" alt="">
+                  <img src="./img/b6.jpg" class="img-fluid rounded-2 card-animate" alt="">
                 </figure>
               </div>
              
           </div>
-            </div>
+          </div>
       </div>
     </section>
+
     <!-- testimonials -->
     <section class="testimonails">
       <div class="testimonail_overlay py-5">
@@ -438,7 +485,9 @@
           </div>
           <div class="testimonail_content py-4">
             <div class="owl-carousel gap-2 m-auto">
-              <div class="carousel-item d-inline-block">
+
+          <!-- testimonial slide 1 -->
+        <div class="carousel-item d-inline-block">
                 <div class="card mb-3" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
@@ -463,9 +512,10 @@
                   </div>
                 </div>
               </div>              
-            </div>
-
-            <div class="carousel-item d-inline-block">
+        </div>
+        
+          <!-- testimonial slide 2 -->
+        <div class="carousel-item d-inline-block">
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                   <div class="col-md-4">
@@ -490,8 +540,9 @@
                 </div>
               </div>
             </div>              
-          </div>
+        </div>
 
+        <!-- testimonial slide 3 -->
           <div class="carousel-item d-inline-block">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
@@ -519,6 +570,7 @@
           </div>              
         </div>
 
+        <!-- testimonial slide 4 -->
         <div class="carousel-item d-inline-block">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
@@ -544,25 +596,27 @@
             </div>
           </div>
         </div>              
-      </div>
+        </div>
       
           </div>
         </div>
       </div>
     </section>
+
     <!-- community -->
     <section class="community text-center">
       <div class="container">
-        <h1 class="section-title">
+        <h1 class="section_title">
           Ready to build your own brand <br> community?
         </h1>
         <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-        <div class="buttons py-5 text-center">
+        <div class="buttons pt-4 text-center">
           <a class="btn btn-outline-pink mx-2 rounded-1" href="#">Book a Demo</a>
           <a class="btn btn-bg-pink mx-2 rounded-1" href="#">Get started</a>
         </div>
       </div>
     </section>
+    
     <!-- footer -->
     <footer>
       <div class="container">
@@ -639,9 +693,24 @@
           </div>
         </div>
       </div>
+      <a href="#" class="scroll_top_up cd-top text-replace js-cd-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </footer>
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- count up -->
+    <script src="./js/countUpJs/jquery.countup.min.js"></script>
+
+    <!-- back to top -->
+    <script src="./js/back-to-top-master/back-to-top-master/assets/js/main.js"></script>
+    <script src="./js/back-to-top-master/back-to-top-master/assets/js/util.js"></script>
+
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap JavaScript Libraries -->
@@ -656,6 +725,8 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Ligh Dark -->
     <script>
         function switchMode(){
             var element = document.body;
@@ -664,6 +735,8 @@
    toggle.classList.toggle('active');
         }
     </script>
+    
+    <!-- owl carousel -->
     <script>
       $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
@@ -696,6 +769,8 @@
   });
 });
     </script>
+
+    <!-- modal -->
     <script>
       const exampleModal = document.getElementById('exampleModal')
 if (exampleModal) {
@@ -715,6 +790,14 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+    </script>
+
+    <!-- scount up -->
+    <script>
+      $('.counter').countUp({
+      'time': 2000,
+      'delay': 10
+      });
     </script>
   </body>
 </html>

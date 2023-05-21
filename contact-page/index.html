@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>MasterWork-Contacts</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -114,9 +114,47 @@
                 </li>
               </ul>
               <div class="search ms-2">
-                <a href="#">
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   <i class="fa fa-search"></i>
                 </a>
+                <div
+                  id="exampleModal"
+                  class="modal fade"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog position-absolute top-50 start-50 translate-middle"
+                  >
+                    <div class="modal-content" style="width: 600px">
+                      <form action="">
+                        <div class="modal-body input-group">
+                          <input
+                            type="text"
+                            id="search"
+                            placeholder="Enter Keyword"
+                            class="form-control"
+                            required=""
+                          />
+                          <button class="btn btn-bg-pink" type="submit">
+                            Search
+                          </button>
+                        </div>
+                        <button
+                          type="button"
+                          class="fa fa-times btn-close me-2 m-auto"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="schedule_btn ms-3">
                 <a
@@ -150,114 +188,144 @@
 
     <!-- contact -->
     <section class="contact">
-    <div class="container">
+      <div class="container">
         <div class="contact_title text-center">
-            <h1 class="section_title">
-                Contact Us
-            </h1>
+          <h1 class="section_title">Contact Us</h1>
         </div>
-
         <div class="contact_content mt-5">
-           <div class="row d-flex align-items-center justify-content-center">
-           <div class="contact_left col-6">
-            <figure class="contact_left mb-0">
-                <img src="../img/contact.jpg" class="img-fluid rounded-2" alt="">
-            </figure>
-           </div>
-           
-            <div class="contact_right col-6">
-                <div class="contact_right">
-                    <form action="" class="form-control p-4">
-                        <h1 class="form_title">Drop us a Message
-                        </h1>
-                        <label for="" class="mb-4 mt-2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices turpis sodales quis. Integer sit amet mattis quam.</label>
-
-                        <input type="text" placeholder="Enter your name" class="form-control">
-                        <input type="text" placeholder="Enter your mail" class="form-control">
-                        <input type="text" placeholder="Subject" class="form-control">
-                        <textarea type="text" placeholder="Enter your message" class="form-control"></textarea>
-                        <div class="submit_btn text-end">
-                            <button class="btn btn-bg-pink">Send</button>
-                        </div>
-                    </form>
-                </div>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="contact_left col-6">
+              <figure class="contact_left mb-0">
+                <img
+                  src="../img/contact.jpg"
+                  class="img-fluid rounded-2 card-animate"
+                  alt=""
+                />
+              </figure>
             </div>
+
+            <div class="contact_right col-6">
+              <div class="contact_right">
+                <form action="" class="form-control p-4">
+                  <h1 class="form_title">Drop us a Message</h1>
+                  <label for="" class="mb-4 mt-2"
+                    >Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices turpis sodales quis. Integer sit amet mattis
+                    quam.</label
+                  >
+
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter your mail"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="form-control"
+                  />
+                  <textarea
+                    type="text"
+                    placeholder="Enter your message"
+                    class="form-control"
+                  ></textarea>
+                  <div class="submit_btn text-end">
+                    <button class="btn btn-bg-pink">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </section>
 
     <!-- touch -->
     <section class="touch">
-        <div class="container">
-            <div class="touch_title text-center">
-                <h3 class="sub_title">
-                    GET IN TOUCH
-                </h3>
-                <h1 class="section_title">
-                    We’re here to help
-                </h1>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-            </div>
-
-            <div class="touch_content text-center d-flex gap-5">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa fa-location-arrow"></i>
-                        </div>
-                        <div class="content_item">
-                            <h4>Our head office address:
-                            </h4>
-                            <p>8th-block road, cross avenue, Lorem dolor sit, New York, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="content_item">
-                            <h4>Call for help:
-                            </h4>
-                            <p>
-                                <a href="tel:+040-123-456-88"> +040-123-456-88
-                                </a>
-                            </p>
-                            <p>
-                                <a href="tel:+040-123-456-89">+040-123-456-89
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon">
-                            <i class="fa fa-envelope-open"></i>
-                        </div>
-                        <div class="content_item">
-                            <h4>Mail Us for information:
-                            </h4>
-                            <p>
-                                <a href="mailto:info@masterwork.com">info@masterwork.com</a>
-                            </p>
-                            <p>
-                                <a href="mailto:info@masterwork.com">masterwork@support.com</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="touch_title text-center">
+          <h3 class="sub_title">GET IN TOUCH</h3>
+          <h1 class="section_title">We’re here to help</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />
+            dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
+            mattis quam.
+          </p>
         </div>
+
+        <div class="touch_content text-center d-flex gap-5 py-4">
+          <div class="card card-animate">
+            <div class="card-body">
+              <div class="icon">
+                <i class="fa fa-location-arrow"></i>
+              </div>
+              <div class="content_item">
+                <h4>Our head office address:</h4>
+                <p>
+                  8th-block road, cross avenue, Lorem dolor sit, New York, USA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-animate">
+            <div class="card-body">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="content_item">
+                <h4>Call for help:</h4>
+                <p>
+                  <a href="tel:+040-123-456-88"> +040-123-456-88 </a>
+                </p>
+                <p>
+                  <a href="tel:+040-123-456-89">+040-123-456-89 </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-animate">
+            <div class="card-body">
+              <div class="icon">
+                <i class="fa fa-envelope-open"></i>
+              </div>
+              <div class="content_item">
+                <h4>Mail Us for information:</h4>
+                <p>
+                  <a href="mailto:info@masterwork.com">info@masterwork.com</a>
+                </p>
+                <p>
+                  <a href="mailto:info@masterwork.com"
+                    >masterwork@support.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- map -->
     <section class="map">
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6000623.759652719!2d-75.770041!3d42.74622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1684496988929!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6000623.759652719!2d-75.770041!3d42.74622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1684496988929!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
 
     <!-- footer -->
@@ -361,6 +429,9 @@
           </div>
         </div>
       </div>
+      <a href="#" class="scroll_top_up cd-top text-replace js-cd-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -374,5 +445,19 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- back to top -->
+    <script src="../js/back-to-top-master/back-to-top-master/assets/js/main.js"></script>
+    <script src="../js/back-to-top-master/back-to-top-master/assets/js/util.js"></script>
+
+    <!-- Ligh Dark -->
+    <script>
+      function switchMode() {
+        var element = document.body;
+        var toggle = document.querySelector(".toggle");
+        element.classList.toggle("dark-mode");
+        toggle.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
