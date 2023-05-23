@@ -74,7 +74,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -163,14 +163,17 @@
                   >Schedule a Demo</a
                 >
               </div>
-              <div class="switch-mode toggle ms-4 d-flex align-items-center">
-                <a type="button" onclick="switchMode()"> </a>
-              </div>
+             
             </div>
+           
           </div>
         </nav>
       </div>
+      <div class="switch-mode toggle">
+        <a type="button" onclick="switchMode()"> </a>
+      </div>
     </header>
+
 
     <!-- breadcrumb -->
     <section class="breadcrumb">
@@ -192,7 +195,7 @@
         <h1 class="section_title text-center">Our Services</h1>
         <div class="service_content">
           <div class="row">
-            <div class="service-left col mt-3">
+            <div class="service-left col-lg-6 col-md-12 mt-3">
               <h1 class="my-4">Our Best Services</h1>
 
               <h3>
@@ -208,7 +211,7 @@
               <a href="#" class="btn btn-bg-pink rounded-1 mt-3">Learn More</a>
             </div>
 
-            <div class="service-right mt-4 ms-4 col">
+            <div class="service-right mt-4 ms-4 col-lg-6 col-md-12">
               <div class="row">
                 <div class="col">
                   <figure>
@@ -299,7 +302,7 @@
         <div class="product_content mt-5">
           <div class="row">
             <!-- fist col -->
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
               <div class="first_colume me-2">
                 <div class="row item d-flex">
                   <h3 class="number_item rounded-circle">1</h3>
@@ -335,7 +338,7 @@
             </div>
 
             <!-- second col -->
-            <div class="col-4">
+            <div class="col-lg-4 col-md-5">
               <figure class="me-2">
                 <img
                   src="../img/service-circle.jpg"
@@ -346,7 +349,7 @@
             </div>
 
             <!-- third col -->
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
               <div class="third_colume ms-2">
                 <div class="row item d-flex">
                   <h3 class="number_item rounded-circle">4</h3>
@@ -398,8 +401,8 @@
             mattis quam.
           </p>
         </div>
-        <div class="feature_service_content d-flex gap-4">
-          <div class="card p-2 w-50">
+        <div class="row feature_service_content d-flex gap-4">
+          <div class="col-lg-6 col-md-12 card p-2">
             <div class="card-body">
               <h5 class="card-title">Connect people and ideas</h5>
               <div class="card-text">
@@ -447,7 +450,7 @@
             </div>
           </div>
 
-          <div class="card p-2 w-50">
+          <div class="col-lg-6 col-md-12 card p-2">
             <div class="card-body">
               <figure>
                 <img
@@ -528,7 +531,7 @@
                       placeholder="Email Address"
                       required
                     />
-                    <button type="submit" class="btn btn-bg-pink px-3">
+                    <button type="submit" class="btn btn-bg-pink px-lg-3 px-md-0">
                       Go
                     </button>
                   </div>
