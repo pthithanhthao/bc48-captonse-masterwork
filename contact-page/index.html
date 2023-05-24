@@ -57,121 +57,79 @@
     <!-- header -->
     <header>
       <div class="header py-2">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container">
-            <a class="navbar-brand navbar-brand--logo" href="#">
-              <h1>
-                <i class="fa fa-handshake"></i>
-                Masterwork
-              </h1>
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-            <i class="fa fa-bars"></i>
-            <i class="fa fa-times"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../service-page/index.html"
-                    >Services</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                    <li><a class="dropdown-item" href="#">Landing page</a></li>
-                    <li><a class="dropdown-item" href="#">404 page</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="../contact-page/index.html"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <div class="search ms-2">
-                <a
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  <i class="fa fa-search"></i>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container">
+                <a class="navbar-brand  navbar-brand--logo" href="#">
+                  <h1>
+                      <i class="fa fa-handshake"></i>
+                      Masterwork
+                  </h1>
                 </a>
-                <div
-                  id="exampleModal"
-                  class="modal fade"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog position-absolute top-50 start-50 translate-middle"
-                  >
-                    <div class="modal-content" style="width: 600px">
-                      <form action="">
-                        <div class="modal-body input-group">
-                          <input
-                            type="text"
-                            id="search"
-                            placeholder="Enter Keyword"
-                            class="form-control"
-                            required=""
-                          />
-                          <button class="btn btn-bg-pink" type="submit">
-                            Search
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-times"></i>
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../service-page/index.html" >Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                        <li><a class="dropdown-item" href="#">Landing page</a></li>
+                        <li><a class="dropdown-item" href="#">404 page</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../contact-page/index.html">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="search-right ms-2">
+                      <div class="search">
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <i class="fa fa-search"></i>
+                      </a>
+                      </div>
+                      <div  id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                       <div class="modal-dialog position-absolute top-50 start-50 translate-middle"> 
+                        <div class="modal-content"  style="width: 600px;">
+                        <form action="">
+                          <div class="modal-body input-group" >
+                            
+                            <input type="text" id="search" placeholder="Enter Keyword" class="form-control" required="">
+                            <button class="btn btn-bg-pink" type="submit">Search</button>
+                           </div>
+                           <button type="button" class="fa fa-times btn-close me-2 m-auto" data-bs-dismiss="modal" aria-label="Close">
                           </button>
+                        </form>
+                          
                         </div>
-                        <button
-                          type="button"
-                          class="fa fa-times btn-close me-2 m-auto"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </form>
-                    </div>
+                       </div>
+
+                      </div>
+                  </div>
+                  <div class="schedule_btn ms-3">
+                      <a href="#" class="btn btn-outline-primary btn-outline-pink rounded-1">Schedule a Demo</a>
+                  </div>
+                  <div class="switch-mode toggle ms-4 d-flex align-items-center">
+                     <a type="button" onclick="switchMode()">
+                     </a>
                   </div>
                 </div>
               </div>
-              <div class="schedule_btn ms-3">
-                <a
-                  href="#"
-                  class="btn btn-outline-primary btn-outline-pink rounded-1"
-                  >Schedule a Demo</a
-                >
-              </div>
-              <div class="switch-mode toggle ms-4 d-flex align-items-center">
-                <a type="button" onclick="switchMode()"> </a>
-              </div>
-            </div>
-          </div>
-        </nav>
+            </nav>
       </div>
-    </header>
+  </header>
 
     <!-- breadcrumb -->
     <section class="breadcrumb">
@@ -195,7 +153,7 @@
         </div>
         <div class="contact_content mt-5">
           <div class="row d-flex align-items-center justify-content-center">
-            <div class="contact_left col-6">
+            <div class="contact_left col-lg-6 col-md-12">
               <figure class="contact_left mb-0">
                 <img
                   src="../img/contact.jpg"
@@ -205,7 +163,7 @@
               </figure>
             </div>
 
-            <div class="contact_right col-6">
+            <div class="contact_right col-lg-6 col-md-12">
               <div class="contact_right">
                 <form action="" class="form-control p-4">
                   <h1 class="form_title">Drop us a Message</h1>
@@ -334,7 +292,7 @@
       <div class="container">
         <div class="footer_reference_link">
           <div class="row">
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="meta">
                 <h3>Meta</h3>
                 <ul>
@@ -345,7 +303,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="categories">
                 <h3>Categories</h3>
                 <ul>
@@ -356,76 +314,51 @@
                 </ul>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="archive">
                 <h3>Archives</h3>
                 <a href="#">March 2021</a>
               </div>
             </div>
-            <div class="col-6">
-              <div class="letter">
-                <h3>Newsletter</h3>
-                <form action="" class="form-control">
-                  <label for="validationDefaultEmail" class="mb-3"
-                    >Get latest updates and offers.
-                  </label>
-                  <div class="email_field my-3 d-flex gap-2">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationDefaultEmail"
-                      placeholder="Email Address"
-                      required
-                    />
-                    <button type="submit" class="btn btn-bg-pink px-3">
-                      Go
-                    </button>
-                  </div>
-                  <div class="form-text">
-                    Sign up for our latest news & articles. We won’t give you
-                    spam mails.
-                  </div>
-                </form>
+            <div class="col-lg-6 col-md-12 mt-md-4 mt-lg-0">
+             <div class="letter">
+              <h3 >Newsletter</h3>
+             <form action="" class="form-control">
+              <label for="validationDefaultEmail" class="mb-3">Get latest updates and offers.
+              </label>
+              <div class="email_field my-3 d-flex gap-2">
+                <input type="text" class="form-control" id="validationDefaultEmail" placeholder="Email Address" required>
+                <button type="submit" class ="btn btn-bg-pink px-3">Go</button>
               </div>
+              <div class="form-text">Sign up for our latest news & articles. We won’t give you spam mails.</div>
+             </form>
+             </div>
             </div>
           </div>
         </div>
-        <div
-          class="footer_allright d-flex justify-content-between align-items-center"
-        >
-          <div class="left">
-            <p>
-              © 2023 Masterwork. All Rights Reserved | WordPress Theme by
+        <div class="row footer_allright d-flex justify-content-between align-items-center">
+          <div class="col-lg-6 left col-md-12">
+            <p>© 2023 Masterwork. All Rights Reserved | WordPress Theme by 
               <a href="#">W3Layouts.</a>
             </p>
           </div>
-          <div class="right">
+          <div class="col-lg-6 right col-md-12">
             <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
+              <li><a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a></li>
+              <li><a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a></li>
+              <li><a href="#">
+                <i class="fab fa-twitter"></i>
+              </a></li>
+              <li><a href="#">
+                <i class="fab fa-google-plus-g"></i>
+              </a></li>
+              <li><a href="#">
+                <i class="fab fa-github"></i>
+              </a></li>
             </ul>
           </div>
         </div>

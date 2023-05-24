@@ -281,8 +281,8 @@ header .nav-item .dropdown-menu::before {
 header .toggle a {
   position: relative;
 }
-header .navbar .switch-mode a.collapse:not(.show) {
-  display: inline-block;
+header .navbar .switch-mode a::before.show {
+  display: inline-block !important;
 }
 header .navbar-toggler .collapse:not(.show) {
   display: inline-block;
@@ -485,13 +485,20 @@ header .navbar-toggler .fa-bars{
 .fqas {
   background-color: var(--light-bg);
 }
+.fqa_content{
+  position: relative;
+}
 .fqa_content figure {
   width: 41%;
+  max-height: 800px;
+  position: sticky;
+  top:90px;
 }
 
 .fqa_content .fqa_accordion {
   width: 59%;
 }
+
 .fqas .accordion-header {
   background-color: #ffffff;
 }
@@ -516,9 +523,12 @@ header .navbar-toggler .fa-bars{
   box-shadow: none;
   z-index: 5;
 }
+
 .fqa_content figure img {
   object-fit: cover;
+  height: 100%;
 }
+
 .fqas .accordion-button::after {
   content: "\f107";
   background-image: none !important;
@@ -676,13 +686,14 @@ footer .email_field input {
   border: none;
   font-family: Nunito, sans-serif;
   font-weight: 600;
-  width: 80%;
+  width: 1;
 }
 footer .email_field .btn-bg-pink {
   text-transform: capitalize !important;
-  padding: 12px 30px !important;
   font-size: 16px;
-  width: 20%;
+  line-height: 25px;
+  padding: 10px 0;
+  width: 100px;
 }
 
 footer form .form-text {
@@ -739,6 +750,9 @@ footer .footer_allright .left {
   color: var(--text-color);
   font-size: 16px;
 }
+
+
+
 footer .scroll_top_up {
   position: fixed;
   bottom: 0;
@@ -995,9 +1009,6 @@ footer .scroll_top_up:hover {
 /* CONTACT PAGE */
 
 @media screen and (max-width:992px) {
-  .container{
-    max-width: 950px;
-  }
   .header{
     height: auto;
     padding: 15px 0;
@@ -1039,20 +1050,22 @@ header .nav-item .dropdown-menu {
 .banner_bg {
   height: 170vh;
 }
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
-.numbers .row{
-  display: flex;
-  justify-content: center;
-}
 .features {
   height: 100vh;
   padding: 15px 0;
 }
+.feature_services .feature_service_content{
+  flex-wrap: wrap !important;
+}
 
+.feature_services .feature_service_content .card{
+  width: 100% !important;
+}
 
 footer .footer_allright{
   display: flex;
@@ -1062,17 +1075,65 @@ footer .footer_allright{
 footer .footer_allright .left p, footer .footer_allright .right ul{
   text-align: center !important;
 }
-.product_content .row{
-  display: flex;
-  justify-content: center;
-}
 
 footer form button{
   text-align: center!;
   display: inline-block;
 }
+.product_content .product_container.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+
 }
 
-@media screen and (max-width:1170px) {
+}
+
+@media screen and (max-width:768px) {
+  .container{
+    max-width: 720px;
+  }
+  .numbers .row, .choose_us_content .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px !important;
+  }
+  .fqa_content figure{
+    width: 100%;
+   position: relative;
+   top: 0px;
+  }
+  .fqa_content .fqa_accordion{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner_bg {
+    height: 120vh;
+  }
+
+  .services .search-right{
+      margin-top: 2rem !important;
+  }
+  .contact_right form{
+    left: 0;
+  }
+
+  .touch_content {
+    flex-wrap: wrap;
+  }
+  .touch_content .card{
+    width: 100% !important;
+  }
+
+  footer .letter{
+    margin-top: 50px;
+  }
+  .product_content .product_container.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
   
+  }
 }
