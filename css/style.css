@@ -758,6 +758,10 @@ footer .footer_allright .left {
   font-size: 16px;
 }
 
+footer .footer_allright .right{
+  text-align: right;
+}
+
 footer .scroll_top_up {
   position: fixed;
   bottom: 0;
