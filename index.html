@@ -53,8 +53,9 @@
                         Masterwork
                     </h1>
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-times"></i>
+                    <i class="fa fa-bars"></i>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -81,10 +82,12 @@
                         <a class="nav-link" href="./contact-page/index.html">Contact</a>
                       </li>
                     </ul>
-                    <div class="search ms-2">
-                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="search-right ms-2">
+                        <div class="search">
+                          <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="fa fa-search"></i>
                         </a>
+                        </div>
                         <div  id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                          <div class="modal-dialog position-absolute top-50 start-50 translate-middle"> 
                           <div class="modal-content"  style="width: 600px;">
@@ -120,22 +123,24 @@
     <section class="banner">
       <div class="banner_bg">
         <div class="banner_overlay">
-          <div class="banner_content container d-flex justify-content-between align-items-center py-lg-0 h-100">
-           <div class="banner_left w-50 pb-5">
-               <h1 class="section_title">We Execute Our Ideas From Start to Finish</h1>
-               <p class="mt-3">Building a beautiful interactive business for <br> startups and innovative companies.</p>
-               <a href="#" class="btn btn-outline-primary btn-outline-pink mt-5 rounded-1">Get started</a>
-           </div>
-           <figure class="banner_right w-50 align-self-end py-lg-0 mb-0">
-               <img src="./img/main.png" alt="" class="img-fluid">
-           </figure>
+        <div class="container">
+          <div class="row banner_content align-items-center py-lg-0 h-100">
+            <div class="col-lg-6 banner_left pb-5">
+              <h1 class="section_title">We Execute Our Ideas From Start to Finish</h1>
+              <p class="mt-3">Building a beautiful interactive business for <br> startups and innovative companies.</p>
+              <a href="#" class="btn btn-outline-primary btn-outline-pink mt-5 rounded-1">Get started</a>
           </div>
+          <figure class="col-lg-6 banner_right col-lg-6 content-photo mt-lg-0 mt-5 align-self-end">
+              <img src="./img/main.png" alt="" class="img-fluid">
+          </figure>
+          </div>
+        </div>
           </div>
       </div>
     </section>
 
     <!-- choose us -->
-    <section class="choose_us text-center m-5">
+    <section class="choose_us text-center m-md-5">
     <div class="container choose_us_container">
       <div class="choose_us_title">
         <h3 class="sub_title">WHY CHOOSE US</h3>
@@ -144,10 +149,10 @@
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
       </div>
       <div class="choose_us_content my-5">
-       <div class="row">
+       <div class="row gx-md-4">
 
         <!-- choose item 1 -->
-        <div class="col">
+        <div class="col-lg-4 col-md-6">
           <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s1.png" class="img-fluid" alt="">
@@ -161,7 +166,7 @@
         </div>
 
          <!-- choose item 1 -->
-        <div class="col">
+        <div class="col-lg-4 col-md-6">
           <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s2.png" class="img-fluid" alt="">
@@ -175,7 +180,7 @@
         </div>
 
          <!-- choose item 1 -->
-        <div class="col">
+        <div class="col-lg-4 col-md-12 mt-md-4 mt-lg-0">
           <div class="card card-animate py-5 px-2">
            <a href="#" >
             <img src="./img/s3.png" class="img-fluid" alt="">
@@ -218,7 +223,7 @@
         <div class="row">
 
           <!-- number item -->
-          <div class="col">
+          <div class="col-lg-4 col-md-6 col-ms-12">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
@@ -232,7 +237,7 @@
           </div>
 
           <!-- number item -->
-          <div class="col">
+          <div class="col-lg-4 col-md-6 col-ms-12">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
@@ -246,7 +251,7 @@
           </div>
 
           <!-- number item -->
-          <div class="col">
+          <div class="number_item_center col-lg-4 col-md-6 mt-md-4 mt-lg-0 col-ms-12">
             <div class="card py-4 px-3">
               <div class="card-body">
                 <h5 class="card-title">
@@ -285,11 +290,11 @@
         </h1>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
       </div>
-      <div class="fqa_content mt-5 d-flex gap-5">
-        <figure>
+      <div class="row fqa_content mt-5">
+        <figure class="col-lg-6 col-ms-12">
           <img src="./img/women.jpg" class="img-fluid h-100 rounded-2 card-animate" alt="">
         </figure>
-        <div class="fqa_accordion">
+        <div class="col-lg-6 col-ms-12 fqa_accordion">
           <div class="accordion" id="accordionExample">
 
             <!-- accordion-item -->
@@ -622,7 +627,7 @@
       <div class="container">
         <div class="footer_reference_link">
           <div class="row">
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="meta">
                 <h3>Meta</h3>
                 <ul>
@@ -633,7 +638,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="categories">
                 <h3>Categories</h3>
                 <ul>
@@ -644,13 +649,13 @@
                 </ul>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
               <div class="archive">
                 <h3>Archives</h3>
                 <a href="#">March 2021</a>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12 mt-md-4 mt-lg-0">
              <div class="letter">
               <h3 >Newsletter</h3>
              <form action="" class="form-control">
@@ -666,13 +671,13 @@
             </div>
           </div>
         </div>
-        <div class="footer_allright d-flex justify-content-between align-items-center">
-          <div class="left">
+        <div class="row footer_allright d-flex justify-content-between align-items-center">
+          <div class="col-lg-6 left col-md-12">
             <p>© 2023 Masterwork. All Rights Reserved | WordPress Theme by 
               <a href="#">W3Layouts.</a>
             </p>
           </div>
-          <div class="right">
+          <div class="col-lg-6 right col-md-12">
             <ul>
               <li><a href="#">
                 <i class="fab fa-facebook-f"></i>
